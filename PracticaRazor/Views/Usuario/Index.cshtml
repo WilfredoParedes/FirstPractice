@@ -1,0 +1,16 @@
+﻿@model IEnumerable<PracticaRazor.Models.Usuarios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Este es el Index</h2>
+
+@foreach (var usu in Model)
+{
+    <p>
+        @usu.nombreUsuario<br />
+        @usu.emailUsuario<br />
+        @usu.Roles.nombreRol<br />
+    </p>
+}
